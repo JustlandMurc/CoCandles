@@ -30,7 +30,6 @@
   </main>
 
   <footer>
-    <p>© 2025 CoCandle. All rights reserved.</p>
   </footer>
 </body>
 </html>
@@ -47,7 +46,14 @@
     <h2>Lavender Bliss</h2>
     <p>Relaxing Lavender scent for cozy nights.</p>
     <p><strong>$29.99</strong></p>
-    <button><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <button><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" onsubmit="return false;">
+  <input type="hidden" name="cmd" value="_xclick">
+  <input type="hidden" name="business" value="mom@example.com">
+  <input type="hidden" name="item_name" value="Special Candle">
+  <input type="hidden" name="amount" value="20.00">
+  <input type="hidden" name="currency_code" value="USD">
+  <input type="submit" value="Not for Sale" disabled>
+</form> action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
   <!-- Tell PayPal it’s a Buy Now button -->
   <input type="hidden" name="cmd" value="_xclick">
 
